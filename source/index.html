@@ -1,12 +1,229 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-main">
+  <section class="intro">
+    <div class="intro__wrapper">
+      <p class="intro__slogan">
+        Взгляните на жизнь иначе!
+      </p>
+      <img src="img/phone.png" alt="Телефон">
+      <img src="img/screen.png" alt="Экран">
+    </div>
+  </section>
+  <section class="download">
+    <div class="download__wrapper">
+      <button class="download__button">Скачать приложение</button>
+      <div class="operating-system__wrapper">
+        <div class="apple-logo">
+          <img src="img/apple-logo.png" alt="логотип Apple" class="apple-logo__image">
+        </div>
+        <div class="android-logo">
+          <img src="img/android-logo.png" alt="логотип android" class="android-logo__image">
+        </div>
+        <div class="windows-logo">
+          <div>
+            <img src="img/path5058.png" alt="логотип windows" class="windows-logo__image">
+            <img src="img/path5060.png" alt="логотип windows" class="windows-logo__image">
+          </div>
+          <div>
+            <img src="img/path5062.png" alt="логотип windows" class="windows-logo__image">
+            <img src="img/path5064.png" alt="логотип windows" class="windows-logo__image">
+          </div>
+        </div>
+      </div>
+      <p class="intro__description">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </div>
+  </section>
+  <section class="slogan">
+    <div class="slogan__wrapper">
+      <p class="slogan__question">
+        Устали от серости мегаполиса?
+      </p>
+      <p class="slogan__answer">
+        Нам есть, что вам предложить!
+      </p>
+    </div>
+  </section>
+  <section class="description">
+    <div class="description__wrapper">
+      <ul class="description__list">
+        <li class="description__block">
+          <h3 class="description__header">
+            Поднимаем настроение
+          </h3>
+          <p class="description__text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="description__block">
+          <h3 class="description__header">
+            Меняем мир вокруг
+          </h3>
+          <p class="description__text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="description__block">
+          <h3 class="description__header">
+            Заводит новых друзей
+          </h3>
+          <p class="description__text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <div class="description__image">
+        <img src="img/iphone%203.png" alt="Телефон" class="description__phone-picture">
+        <img src="img/iphone%20screen-3.png" alt="Экран" class="description__screen-picture">
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__wrapper">
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item--current">
+          <cite class="reviews__author-name">
+            Николай Петров
+          </cite>
+          <p class="reviews__text">
+            Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!
+          </p>
+        </blockquote>
+      </div>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
+  <section class="tariffs">
+    <div class="tariffs__wrapper slider">
+      <table class="tariffs__item slider__item slider__item--current">
+        <tr>
+          <th class="item__header">
+            <p class="item__badge">ХИТ</p>
+            <p class="item__name">СТАНДАРТ</p>
+            <p class="item__price">3,99 USD</p>
+          </th>
+        </tr>
+        <tr>
+          <p class="item__text">
+            РОЗОВЫЙ ФИЛЬТР
+          </p>
+          <img class="item__picture" src="img/yes.png" alt="да">
+        </tr>
+        <tr>
+          <p class="item__text">
+            СМАЙЛИКИ
+          </p>
+          <img class="item__picture" src="img/no.png" alt="нет">
+        </tr>
+        <tr>
+          <p class="item__text">
+            КОММЕНТАРИИ
+          </p>
+          <img class="item__picture" src="img/no.png" alt="нет">
+        </tr>
+      </table>
+    </div>
+    <p class="tariffs__toggles slider__toggles">
+      <button class="slider__toggle slider__toggle--current" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </p>
+  </section>
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <h3 class="contacts__header">
+        Остались вопросы? Свяжитесь с нами!
+      </h3>
+      <div class="contacts__item">
+        <p class="contacts__title">
+          Звоните:
+        </p>
+        <a class="contacts__phone" href="tel:+78125556666">
+          +7 (812) 555-66-66
+        </a>
+      </div>
+      <div class="contacts__item">
+        <p class="contacts__title">
+          Пишите
+        </p>
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+      <div class="contacts__item">
+        <p class="contacts__title">
+          Приезжайте в гости:
+        </p>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, 19/7
+        </address>
+      </div>
+      <div class="contacts__map">
+        <img src="img/map.png" alt="Карта" class="map__image">
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logo">
+      <img src="img/glasses.png" alt="очки" class="logo__glasses">
+      <img src="img/pink.svg" alt="PINK" height="23" width="74" class="logo__text">
+    </div>
+    <div class="page-footer__social-networks">
+      <a href="#" class="social-network__button">
+        <img src="img/twitter.png" alt="twitter" class="social-network__logo">
+      </a>
+      <a href="#" class="social-network__button">
+        <img src="img/facebook.png" alt="facebook" class="social-network__logo">
+      </a>
+      <a href="#" class="social-network__button">
+        <img src="img/youtube.png" alt="youtube" class="social-network__logo">
+      </a>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="copyright__text">Разработано</p>
+      <img src="img/htmlacademy.svg" alt="лого" width="16" height="16" class="copyright__logo">
+    </div>
+  </div>
+</footer>
+</body>
 </html>
