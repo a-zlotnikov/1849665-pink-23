@@ -25,7 +25,7 @@
             <a href="#">конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a href="#">html academy</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
         <small class="form__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </small>
-        <section class="form__name-block">
+        <fieldset class="form__name-block">
           <div class="name-block__surname">
             <label for="surname">Фамилия</label>
             <input type="text" placeholder="Укажите фамилию" id="surname"/>
@@ -57,11 +57,11 @@
             <label for="second-name">Отчество</label>
             <input type="text" placeholder="Ну и отчество тоже" id="second-name"/>
           </div>
-        </section>
-        <section class="form__achievements">
-          <h4 class="achievements__title">
-            ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ
-          </h4>
+        </fieldset>
+        <fieldset class="form__achievements">
+          <legend class="achievements__title">
+            ваши безбашенные достижения в путешествии
+          </legend>
           <div class="achievements__block">
             <input class="achievements__checkbox" type="checkbox" id="selfie">
             <label class="achievements__label" for="selfie">Сделал селфи с акулой</label>
@@ -86,20 +86,20 @@
             <input class="achievements__checkbox" type="checkbox" id="hotel">
             <label class="achievements__label" for="hotel">Разгромил отель</label>
           </div>
-        </section>
-        <section class="form__contacts">
+        </fieldset>
+        <fieldset class="form__contacts">
           <div class="contacts__block">
-            <label for="phone">НОМЕР ТЕЛЕФОНА</label>
+            <label for="phone">номер телефона</label>
             <input placeholder="Номер, пожалуйста" type="tel" id="phone"/>
           </div>
           <div class="contacts__block">
-            <label for="email">АДРЕС ПОЧТЫ</label>
+            <label for="email">адрес почты</label>
             <input placeholder="Номер, пожалуйста" type="email" id="email"/>
           </div>
-        </section>
+        </fieldset>
         <section class="form__os">
           <h4 class="os__title">
-            С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?
+            с каким приложением путешествовали?
           </h4>
           <div class="os__block">
             <input type="radio" id="iOs">
@@ -116,14 +116,14 @@
         </section>
         <section class="form__review">
           <h4 class="review__title">
-            ОПИШИТЕ СВОИ ЭМОЦИИ
+            опишите свои эмоции
           </h4>
           <label>
             <textarea name="review" id="review" cols="30" rows="6" class="review__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
         </section>
       </div>
-      <button class="form__button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+      <button class="form__button" type="submit">отправить форму</button>
     </form>
     <div id="success-modal" class="success-modal modal--hidden">
       <div class="success-modal__dialog">
@@ -139,7 +139,7 @@
             </p>
           </div>
           <button class="success-modal__button">
-            ЗАКРЫТЬ ОКНО
+            закрыть окно
           </button>
         </div>
       </div>
