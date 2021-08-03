@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Открыть</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="./index.html">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="./catalog.html">фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page__main">
+    <section class="intro">
+      <div class="intro__wrapper">
+        <p class="intro__slogan">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </p>
+      </div>
+    </section>
+    <form class="form">
+      <div class="form__wrapper">
+        <small class="form__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        </small>
+        <fieldset class="form__name-block">
+          <div class="name-block__surname">
+            <label for="surname">Фамилия</label>
+            <input type="text" placeholder="Укажите фамилию" id="surname"/>
+          </div>
+          <div class="name-block__first-name">
+            <label for="first-name">Имя</label>
+            <input type="text" placeholder="Введите ваше имя" id="first-name"/>
+          </div>
+          <div class="name-block__second-name">
+            <label for="second-name">Отчество</label>
+            <input type="text" placeholder="Ну и отчество тоже" id="second-name"/>
+          </div>
+        </fieldset>
+        <fieldset class="form__achievements">
+          <legend class="achievements__title">
+            ваши безбашенные достижения в путешествии
+          </legend>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="selfie">
+            <label class="achievements__label" for="selfie">Сделал селфи с акулой</label>
+          </div>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="beach">
+            <label class="achievements__label" for="beach">Обгорел на пляже</label>
+          </div>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="chuck">
+            <label class="achievements__label" for="chuck">Видел Чака Норриса</label>
+          </div>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="souvenir">
+            <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+          </div>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="tower">
+            <label class="achievements__label" for="tower">Удержал башню</label>
+          </div>
+          <div class="achievements__block">
+            <input class="achievements__checkbox" type="checkbox" id="hotel">
+            <label class="achievements__label" for="hotel">Разгромил отель</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__contacts">
+          <div class="contacts__block">
+            <label for="phone">номер телефона</label>
+            <input placeholder="Номер, пожалуйста" type="tel" id="phone"/>
+          </div>
+          <div class="contacts__block">
+            <label for="email">адрес почты</label>
+            <input placeholder="Номер, пожалуйста" type="email" id="email"/>
+          </div>
+        </fieldset>
+        <section class="form__os">
+          <h4 class="os__title">
+            с каким приложением путешествовали?
+          </h4>
+          <div class="os__block">
+            <input type="radio" id="iOs">
+            <label for="iOs">Pink для iOs</label>
+          </div>
+          <div class="os__block">
+            <input type="radio" id="android">
+            <label for="android">Pink для Android</label>
+          </div>
+          <div class="os__block">
+            <input type="radio" id="windows">
+            <label for="windows">Pink для Windows Phone</label>
+          </div>
+        </section>
+        <section class="form__review">
+          <h4 class="review__title">
+            опишите свои эмоции
+          </h4>
+          <label>
+            <textarea name="review" id="review" cols="30" rows="6" class="review__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </section>
+      </div>
+      <button class="form__button" type="submit">отправить форму</button>
+    </form>
+    <div id="success-modal" class="success-modal modal--hidden">
+      <div class="success-modal__dialog">
+        <div class="success-modal__content">
+          <div class="success-modal__header">
+            <h4 class="success-modal__title">
+              Ваша заявка отправлена
+            </h4>
+          </div>
+          <div class="success-modal__body">
+            <p>
+              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.
+            </p>
+          </div>
+          <button class="success-modal__button">
+            закрыть окно
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="failure-modal" class="failure-modal modal--hidden">
+      <div class="failure-modal__dialog">
+        <div class="failure-modal__content">
+          <div class="failure-modal__header">
+            <h4 class="failure-modal__title">
+              Что-то пошло не так!
+            </h4>
+          </div>
+          <div class="failure-modal__body">
+            <p>
+              Проверьте поля,выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+          </div>
+          <button class="failure-modal__button">
+            ОК
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img src="img/glasses.png" alt="очки" class="logo__glasses">
+        <img src="img/pink.svg" alt="PINK" height="23" width="74" class="logo__text">
+      </div>
+      <div class="page-footer__social-networks">
+        <a href="#" class="social-network__button">
+          <img src="img/twitter.png" alt="twitter" class="social-network__logo">
+        </a>
+        <a href="#" class="social-network__button">
+          <img src="img/facebook.png" alt="facebook" class="social-network__logo">
+        </a>
+        <a href="#" class="social-network__button">
+          <img src="img/youtube.png" alt="youtube" class="social-network__logo">
+        </a>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <img src="img/htmlacademy.svg" alt="лого" width="16" height="16" class="copyright__logo">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
