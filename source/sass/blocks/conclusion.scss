@@ -1,0 +1,14 @@
+.conclusion {
+  width: 320px;
+
+  &__slogan {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+}

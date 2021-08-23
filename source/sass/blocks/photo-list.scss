@@ -1,0 +1,85 @@
+.photo-list {
+  width: 320px;
+
+  &__list {
+    width: 320px;
+    padding-inline-start: 0;
+  }
+
+  &__item {
+    padding-bottom: 18px;
+  }
+
+  &__badge {
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__image {
+    width: 320px;
+  }
+
+  &__substrate {
+    width: 280px;
+    background-color: #f2f2f2;
+    margin: 0 20px;
+  }
+
+  &__author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    padding-left: 17px;
+
+    &--time {
+      font-style: normal;
+      font-weight: 30;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #283645;
+    padding-left: 17px;
+    padding-right: 10px;
+  }
+
+  &__likes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+    align-items: center;
+  }
+
+  .likes__amount {
+    margin-left: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #D22856;
+  }
+}

@@ -1,0 +1,13 @@
+.page {
+  height: 100%;
+  width: 320px;
+  font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 27px;
+  left: 0;
+  top: 0;
+
+  .modal--hidden {
+    display: none;
+  }
+}

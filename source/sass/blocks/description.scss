@@ -1,0 +1,39 @@
+.description {
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 900px;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    .description__phone-picture {
+      position: absolute;
+      box-sizing: border-box;
+    }
+
+    .description__screen-picture {
+      position: absolute;
+      margin-top: 35px;
+    }
+  }
+}

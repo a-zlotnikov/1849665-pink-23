@@ -1,0 +1,43 @@
+.tariffs {
+  background-color: #f2f2f2;
+  width: 320px;
+
+  &__item {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline-start: 0;
+  }
+
+  &__toggles {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item__row {
+    width: 236px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2px solid #E5E5E5;
+    padding: 0 20px;
+
+    img {
+      margin-right: 0;
+    }
+  }
+
+  .item__header {
+    width: 276px;
+    background-color: #283645;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

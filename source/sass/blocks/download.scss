@@ -1,0 +1,47 @@
+.download {
+  background-color: #1d2631;
+  width: 320px;
+  color: #ffffff;
+
+  .download__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .download__button {
+      align-items: center;
+      margin: 28px auto;
+      height: 55px;
+      width: 280px;
+      border: 3px solid #ffffff;
+      background-color: #1d2631;
+      color: #ffffff;
+      border-radius: 29px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .operating-system__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 28px;
+    }
+
+    .download__description {
+      padding: 0 15px 28px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

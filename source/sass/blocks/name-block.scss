@@ -1,0 +1,33 @@
+.name-block {
+  border: none;
+
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #d22856;
+  }
+
+  input {
+    width: 230px;
+    height: 59px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+
+    color: #283645;
+  }
+}

@@ -1,0 +1,24 @@
+.form {
+
+  &__button {
+    width: 276px;
+    height: 59px;
+    left: 22px;
+    top: 2330px;
+
+    background: #2AAB6D;
+    border: 2px solid #2AAB6D;
+    border-radius: 1px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+}
