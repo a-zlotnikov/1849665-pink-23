@@ -1,0 +1,44 @@
+.contacts {
+  .contacts__header {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto;
+  }
+
+  .contacts__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .contacts__link {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    color: $--pink-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts__map {
+    width: 320px;
+  }
+}

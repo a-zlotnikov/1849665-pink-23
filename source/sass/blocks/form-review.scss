@@ -1,0 +1,33 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 320px;
+
+  .review__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $--pink-color;
+  }
+
+  .review__text {
+    width: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 23px;
+
+    color: $--dark-font-color;
+  }
+}

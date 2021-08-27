@@ -1,0 +1,64 @@
+.tariffs {
+  background-color: #f2f2f2;
+  width: 320px;
+
+  .tariffs__item {
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    padding-inline-start: 0;
+  }
+
+  .tariffs__toggles {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item__row {
+    width: 236px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding: 0 20px;
+
+    img {
+      margin-right: 0;
+    }
+  }
+
+  .item__header {
+    width: 276px;
+    background-color: $--dark-font-color;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item__badge {
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .item__name {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .item__price {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-weight: 300;
+  }
+
+  .item__text {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}

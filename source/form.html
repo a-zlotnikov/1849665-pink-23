@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="./index.html">главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="./catalog.html">фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">html academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="./catalog.html">фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="./form.html">конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">html academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
   <main class="page__main">
     <section class="intro">
       <div class="intro__wrapper">
@@ -44,21 +46,21 @@
         <small class="form__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </small>
-        <fieldset class="form__name-block">
+        <fieldset class="name-block">
           <div class="name-block__surname">
-            <label for="surname">Фамилия</label>
-            <input type="text" placeholder="Укажите фамилию" id="surname"/>
+            <label for="surname">Фамилия:</label>
+            <input type="text" placeholder="Укажите фамилию *" id="surname"/>
           </div>
           <div class="name-block__first-name">
-            <label for="first-name">Имя</label>
-            <input type="text" placeholder="Введите ваше имя" id="first-name"/>
+            <label for="first-name">Имя:</label>
+            <input type="text" placeholder="Введите ваше имя *" id="first-name"/>
           </div>
           <div class="name-block__second-name">
-            <label for="second-name">Отчество</label>
+            <label for="second-name">Отчество:</label>
             <input type="text" placeholder="Ну и отчество тоже" id="second-name"/>
           </div>
         </fieldset>
-        <fieldset class="form__achievements">
+        <fieldset class="achievements">
           <legend class="achievements__title">
             ваши безбашенные достижения в путешествии
           </legend>
@@ -94,10 +96,10 @@
           </div>
           <div class="contacts__block">
             <label for="email">адрес почты</label>
-            <input placeholder="Номер, пожалуйста" type="email" id="email"/>
+            <input placeholder="Введите почту *" type="email" id="email"/>
           </div>
         </fieldset>
-        <section class="form__os">
+        <section class="os">
           <h4 class="os__title">
             с каким приложением путешествовали?
           </h4>
@@ -114,7 +116,7 @@
             <label for="windows">Pink для Windows Phone</label>
           </div>
         </section>
-        <section class="form__review">
+        <section class="review">
           <h4 class="review__title">
             опишите свои эмоции
           </h4>
@@ -167,18 +169,17 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="img/glasses.png" alt="очки" class="logo__glasses">
-        <img src="img/pink.svg" alt="PINK" height="23" width="74" class="logo__text">
+        <img src="img/logotype-blue-tablet.svg" alt="PINK" width="145" height="40">
       </div>
       <div class="page-footer__social-networks">
         <a href="#" class="social-network__button">
-          <img src="img/twitter.png" alt="twitter" class="social-network__logo">
+          <img src="img/twitter.svg" alt="twitter" class="social-network__logo">
         </a>
         <a href="#" class="social-network__button">
-          <img src="img/facebook.png" alt="facebook" class="social-network__logo">
+          <img src="img/facebook.svg" alt="facebook" class="social-network__logo">
         </a>
         <a href="#" class="social-network__button">
-          <img src="img/youtube.png" alt="youtube" class="social-network__logo">
+          <img src="img/youtube.svg" alt="youtube" class="social-network__logo">
         </a>
       </div>
       <div class="page-footer__copyright">

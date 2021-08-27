@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/download.scss";
+@import "blocks/slogan.scss";
+@import "blocks/description.scss";
+@import "blocks/reviews.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/photo-list.scss";
+@import "blocks/conclusion.scss";
+@import "blocks/add-picture.scss";
+@import "blocks/form.scss";
+@import "blocks/name-block.scss";
+@import "blocks/achievements.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-os.scss";
+@import "blocks/form-review.scss";
+@import "blocks/photo-slogan.scss";

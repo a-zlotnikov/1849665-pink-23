@@ -1,0 +1,40 @@
+.description {
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 900px;
+
+  .description__header {
+    text-align: center;
+  }
+
+  .description__list {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  .description__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .description__text {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    text-align: center;
+  }
+
+  .description__image {
+    display: flex;
+    justify-content: center;
+
+    .description__phone-picture {
+      position: absolute;
+      box-sizing: border-box;
+    }
+
+    .description__screen-picture {
+      position: absolute;
+      margin-top: 35px;
+    }
+  }
+}

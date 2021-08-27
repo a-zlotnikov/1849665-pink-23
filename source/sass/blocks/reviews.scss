@@ -1,0 +1,25 @@
+.reviews {
+  width: 320px;
+
+  .reviews__author-name {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 167%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reviews__text {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    text-align: center;
+    line-height: 214%;
+  }
+
+  .reviews__toggles {
+    display: flex;
+    justify-content: center;
+  }
+}

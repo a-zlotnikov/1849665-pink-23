@@ -1,0 +1,92 @@
+.photo-list {
+  width: 320px;
+
+  .photo-list__list {
+    width: 100%;
+    padding-inline-start: 0;
+  }
+
+  .photo-list__item {
+    padding-bottom: 18px;
+  }
+
+  .photo-list__badge-wrapper {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    right: 0;
+    left: 0;
+  }
+
+  .photo-list__badge {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 2;
+    text-transform: uppercase;
+    background-color: $--pink-color;
+    padding: 13px 20px 14px;
+
+    color: #ffffff;
+    float: right;
+  }
+
+  .photo-list__image {
+    width: 320px;
+  }
+
+  .photo-list__substrate {
+    width: 280px;
+    background-color: #f2f2f2;
+    margin: 0 20px;
+  }
+
+  .photo-list__author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $--dark-font-color;
+    padding-left: 17px;
+
+    &--time {
+      font-style: normal;
+      font-weight: 30;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+  .photo-list__description {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 171%;
+    display: flex;
+    align-items: center;
+    color: $--dark-font-color;
+    padding-left: 17px;
+    padding-right: 10px;
+  }
+
+  &__likes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+    align-items: center;
+  }
+
+  .likes__amount {
+    margin-left: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: $--pink-color;
+  }
+}

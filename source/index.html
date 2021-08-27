@@ -2,12 +2,14 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page__body">
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
+<body>
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="img/pink.svg" alt="PINK" width="74" height="23">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
@@ -35,10 +37,10 @@
   <section class="intro">
     <div class="intro__wrapper">
       <p class="intro__slogan">
-        Взгляните на жизнь иначе!
+        Взгляните на жизнь <br> иначе!
       </p>
-      <img src="img/phone.png" alt="Телефон">
-      <img src="img/screen.png" alt="Экран">
+      <img src="img/phone.png" class="intro__phone" alt="Телефон">
+      <img src="img/screen.png" class="intro__screen" alt="Экран">
     </div>
   </section>
   <section class="download">
@@ -62,7 +64,7 @@
           </div>
         </div>
       </div>
-      <p class="intro__description">
+      <p class="download__description">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </div>
@@ -133,33 +135,31 @@
   </section>
   <section class="tariffs">
     <div class="tariffs__wrapper slider">
-      <table class="tariffs__item slider__item slider__item--current">
-        <tr>
-          <th class="item__header">
-            <p class="item__badge">хит</p>
-            <p class="item__name">стандарт</p>
-            <p class="item__price">3,99 USD</p>
-          </th>
-        </tr>
-        <tr>
+      <ul class="tariffs__item slider__item slider__item--current">
+        <li class="item__header">
+          <span class="item__badge">хит</span>
+          <span class="item__name">стандарт</span>
+          <span class="item__price">3,99 USD</span>
+        </li>
+        <li class="item__row">
           <p class="item__text">
             розовый фильтр
           </p>
-          <img class="item__picture" src="img/yes.png" alt="да">
-        </tr>
-        <tr>
+          <img class="item__picture" src="img/yes.png" height="21" width="31" alt="да">
+        </li>
+        <li class="item__row">
           <p class="item__text">
             смайлики
           </p>
-          <img class="item__picture" src="img/no.png" alt="нет">
-        </tr>
-        <tr>
+          <img class="item__picture" src="img/no.png" height="27" width="27" alt="нет">
+        </li>
+        <li class="item__row">
           <p class="item__text">
             комментарии
           </p>
-          <img class="item__picture" src="img/no.png" alt="нет">
-        </tr>
-      </table>
+          <img class="item__picture" src="img/no.png" height="27" width="27" alt="нет">
+        </li>
+      </ul>
     </div>
     <p class="tariffs__toggles slider__toggles">
       <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -173,26 +173,26 @@
         Остались вопросы? Свяжитесь с нами!
       </h3>
       <div class="contacts__item">
-        <p class="contacts__title">
+        <span class="contacts__title">
           Звоните:
-        </p>
-        <a class="contacts__phone" href="tel:+78125556666">
+        </span>
+        <a class="contacts__phone contacts__link" href="tel:+78125556666">
           +7 (812) 555-66-66
         </a>
       </div>
       <div class="contacts__item">
-        <p class="contacts__title">
+        <span class="contacts__title">
           Пишите
-        </p>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+        </span>
+        <a class="contacts__email contacts__link" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
         </a>
       </div>
       <div class="contacts__item">
-        <p class="contacts__title">
+        <span class="contacts__title">
           Приезжайте в гости:
-        </p>
-        <address class="contacts__address">
+        </span>
+        <address class="contacts__address contacts__link">
           ул. Большая Конюшенная, 19/7
         </address>
       </div>
@@ -202,26 +202,25 @@
     </div>
   </section>
 </main>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <div class="page-footer__logo">
-      <img src="img/glasses.png" alt="очки" class="logo__glasses">
-      <img src="img/pink.svg" alt="PINK" height="23" width="74" class="logo__text">
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="logo">
+      <img src="img/logotype-blue-tablet.svg" alt="PINK" width="145" height="40">
     </div>
-    <div class="page-footer__social-networks">
+    <div class="social-networks">
       <a href="#" class="social-network__button">
-        <img src="img/twitter.png" alt="twitter" class="social-network__logo">
+        <img src="img/twitter.svg" alt="twitter" class="social-network__logo" height="14" width="18">
       </a>
       <a href="#" class="social-network__button">
-        <img src="img/facebook.png" alt="facebook" class="social-network__logo">
+        <img src="img/facebook.svg" alt="facebook" class="social-network__logo">
       </a>
       <a href="#" class="social-network__button">
-        <img src="img/youtube.png" alt="youtube" class="social-network__logo">
+        <img src="img/youtube.svg" alt="youtube" class="social-network__logo">
       </a>
     </div>
-    <div class="page-footer__copyright">
+    <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <img src="img/htmlacademy.svg" alt="лого" width="16" height="16" class="copyright__logo">
+      <img src="img/htmlacademy.svg" alt="лого" width="27" height="34" class="copyright__logo">
     </div>
   </div>
 </footer>
