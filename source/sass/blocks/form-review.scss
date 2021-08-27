@@ -5,7 +5,7 @@
   text-align: center;
   width: 320px;
 
-  &__title {
+  .review__title {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -15,10 +15,10 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: #d22856;
+    color: $--pink-color;
   }
 
-  &__text {
+  .review__text {
     width: 230px;
     font-style: normal;
     font-weight: normal;
@@ -28,6 +28,6 @@
     align-items: center;
     padding: 10px 23px;
 
-    color: #283645;
+    color: $--dark-font-color;
   }
 }

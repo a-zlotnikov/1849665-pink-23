@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/intro.scss";
@@ -18,3 +21,4 @@
 @import "blocks/form-contacts.scss";
 @import "blocks/form-os.scss";
 @import "blocks/form-review.scss";
+@import "blocks/photo-slogan.scss";

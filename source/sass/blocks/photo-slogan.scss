@@ -1,15 +1,16 @@
-.conclusion {
-  width: 320px;
+.photo-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
-  .conclusion__slogan {
+  .photo-slogan__text {
     font-family: "Open Sans Light", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 214%;
-    display: flex;
-    align-items: center;
     text-align: center;
-    padding: 10px;
   }
 }

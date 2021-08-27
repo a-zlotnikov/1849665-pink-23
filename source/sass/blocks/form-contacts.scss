@@ -11,7 +11,7 @@
     align-items: center;
     text-transform: uppercase;
 
-    color: #d22856;
+    color: $--pink-color;
   }
 
   input {
@@ -31,6 +31,6 @@
     align-items: center;
     padding: 0 23px;
 
-    color: #283645;
+    color: $--dark-font-color;
   }
 }

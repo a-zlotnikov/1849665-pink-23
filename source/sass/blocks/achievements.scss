@@ -5,7 +5,7 @@
   padding-inline-start: 0;
   padding-inline-end: 0;
 
-  &__title {
+  .achievements__title {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -15,22 +15,22 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: #d22856;
+    color: $--pink-color;
   }
 
-  &__block {
+  .achievements__block {
     margin: 22px 0 22px 24px;
     display: flex;
     align-items: center;
   }
 
-  &__checkbox {
+  .achievements__checkbox {
     width: 35px;
     height: 35px;
     margin-right: 22px;
   }
 
-  &__label {
+  .achievements__label {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -38,6 +38,6 @@
     display: flex;
     align-items: center;
 
-    color: #283645;
+    color: $--dark-font-color;
   }
 }

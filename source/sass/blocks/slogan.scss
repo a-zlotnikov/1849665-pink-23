@@ -7,10 +7,11 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #283645;
+    color: $--dark-font-color;
     margin: 46px 20px;
 
     .slogan__question {
+      font-family: "Open Sans Light", "Arial", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 24px;
@@ -21,6 +22,7 @@
     }
 
     .slogan__answer {
+      font-family: "Open Sans Light", "Arial", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 24px;

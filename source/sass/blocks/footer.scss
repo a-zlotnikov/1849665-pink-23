@@ -1,4 +1,4 @@
-.page-footer {
+.footer {
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -6,34 +6,40 @@
   align-items: center;
   margin-top: 40px;
 
-  &__logo {
+  .logo {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  &__social-networks {
+  .social-networks {
     margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+    grid-template-rows: 48px;
+    place-content: center;
+    grid-gap: 10px;
+
+    .social-network__button {
+      border: 3px solid rgba(40, 54, 69, 0.1);
+      border-radius: 50%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+    }
   }
 
-  .social-network__button {
-    border: 3px solid rgba(40, 54, 69, 0.1);
-    border-radius: 50%;
-    margin: 0 8px;
-    padding: 15px;
-  }
-
-  &__copyright {
+  .copyright {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
 
-  &__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    .copyright__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

@@ -1,12 +1,12 @@
 .form {
-  &__button {
+  .form__button {
     width: 276px;
     height: 59px;
     left: 22px;
     top: 2330px;
 
-    background: #2aab6d;
-    border: 2px solid #2aab6d;
+    background: $--button-color--success;
+    border: 2px solid $--button-color--success;
     border-radius: 1px;
 
     font-style: normal;

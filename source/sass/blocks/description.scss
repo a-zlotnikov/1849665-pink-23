@@ -3,26 +3,27 @@
   width: 320px;
   height: 900px;
 
-  &__header {
+  .description__header {
     text-align: center;
   }
 
-  &__list {
+  .description__list {
     list-style-type: none;
     padding-inline-start: 0;
   }
 
-  &__wrapper {
+  .description__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  &__text {
+  .description__text {
+    font-family: "Open Sans Light", "Arial", sans-serif;
     text-align: center;
   }
 
-  &__image {
+  .description__image {
     display: flex;
     justify-content: center;
 
